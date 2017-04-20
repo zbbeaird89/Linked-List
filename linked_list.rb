@@ -121,25 +121,3 @@ class Node
 		@next_node = next_node
 	end
 end
-
-list = LinkedList.new
-list.append("hello")
-list.append("hi there")
-list.append("koookakkaa")
-list.append("bye bye")
-list.append("hola")
-list.prepend("tag")
-puts list.head.value
-puts list.head.next_node.value
-puts list.head.next_node.next_node.value
-puts list.size
-puts list.at(3).value
-puts list.pop
-puts list.tail.value
-puts list.contains?("hi there")
-puts list.find("bye bye")
-puts list.to_s
-list.insert_at("dog", 3)
-puts list.to_s
-list.remove_at(3)
-puts list.to_s
